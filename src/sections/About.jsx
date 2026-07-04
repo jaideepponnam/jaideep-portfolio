@@ -1,6 +1,8 @@
 import { socialLinks } from '../data/portfolio';
 import SocialLink from '../ui/SocialLink';
 
+const profileImage = `${import.meta.env.BASE_URL}images/profile-pic.jpg`;
+
 export default function About() {
   return (
     <section id="about" className="modern-section about-section">
@@ -18,7 +20,7 @@ export default function About() {
 
           <div className="about-hero-right">
             <img
-              src="/images/profile-pic.jpg"
+              src={profileImage}
               alt="Jaideep Ponnam"
               className="about-hero-photo"
               loading="eager"
